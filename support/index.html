@@ -1,0 +1,161 @@
+---
+---
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.game_name }} – podpora / support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#f4f1e6; --card:#fffdf6; --fg:#24301f; --muted:#5f6b57; --line:#ddd5bf; --accent:#2f7a3a; --wood:#9a6435; --wood-dark:#6d4322; --tile:#f6e3b8; --tile-fg:#4a2e14; --leaf:#4f9a45; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121a12; --card:#1a241a; --fg:#ecf1e4; --muted:#a9b79f; --line:#2e3b2c; --accent:#7cc76f; --wood:#7b4f2a; --wood-dark:#4f3119; --tile:#e9d3a2; --tile-fg:#3e2610; --leaf:#5fae52; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; overflow-wrap:break-word; }
+  .top { background:linear-gradient(180deg, #1f4d27 0%, #2f6b33 60%, #3d7d3a 100%); padding:18px 16px; border-bottom:6px solid var(--wood); box-shadow:inset 0 -2px 0 var(--wood-dark); }
+  .top a { display:inline-flex; gap:4px; text-decoration:none; }
+  .top span { display:grid; place-items:center; width:28px; height:32px; border-radius:7px; background:var(--tile); color:var(--tile-fg); font:600 19px/1 "Fredoka", sans-serif; box-shadow:0 3px 0 var(--wood-dark); }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font:600 28px/1.25 "Fredoka", sans-serif; margin:0 0 8px; }
+  h2 { font:600 20px/1.3 "Fredoka", sans-serif; margin:32px 0 10px; color:var(--accent); }
+  p { margin:6px 0; }
+  a { color:var(--accent); }
+  .lang { display:flex; gap:10px; margin:0 0 24px; }
+  .lang a { padding:6px 14px; border-radius:999px; border:1px solid var(--line); background:var(--card); color:var(--fg); text-decoration:none; font-weight:700; font-size:14px; }
+  .contact { background:var(--card); border:1px solid var(--line); border-left:6px solid var(--leaf); border-radius:12px; padding:14px 18px; }
+  details { background:var(--card); border:1px solid var(--line); border-radius:12px; margin:10px 0; }
+  summary { cursor:pointer; padding:12px 16px; font-weight:700; list-style-position:inside; }
+  details[open] summary { border-bottom:1px solid var(--line); }
+  details > div { padding:8px 16px 12px; }
+  hr { border:0; border-top:2px dashed var(--line); margin:48px 0; }
+</style>
+</head>
+<body>
+<header class="top"><a href="../" aria-label="SKREMBL"><span>S</span><span>K</span><span>R</span><span>E</span><span>M</span><span>B</span><span>L</span></a></header>
+<main>
+
+<nav class="lang"><a href="#cs" lang="cs">Čeština</a><a href="#en" lang="en">English</a></nav>
+
+<section id="cs" lang="cs">
+<h1>Podpora</h1>
+<p class="contact">Máš dotaz nebo problém se hrou? Napiš nám na <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>. Pomůže, když připíšeš model telefonu, verzi hry (je v Nastavení) a co přesně se stalo.</p>
+
+<h2>Časté dotazy</h2>
+
+<details><summary>Jak se hraje?</summary><div>
+<p>Přetahuj kostičky s písmeny – ostatní kostičky uhnou. Slovo musí použít všechna písmena v řádku. Najdi všechna slova, která z písmen jdou složit; pak odpadne jedno nebo dvě písmena a hledáš kratší slova. Level končí slovem ze 3 nebo 4 písmen. Platí jen základní tvary slov, žádná vlastní jména, zkratky ani vulgarismy. Celá pravidla najdeš ve hře v Nastavení → „Pravidla“.</p>
+</div></details>
+
+<details><summary>Jak fungují životy?</summary><div>
+<p>Každý pokus o nový level stojí jeden život. Život se obnoví za 30 minut, najednou můžeš mít nejvýš 5 životů. Když dojdou, můžeš počkat, doplnit 5 životů za 150 mincí, nebo si pustit reklamu, která životy také doplní.</p>
+<p>Levely, bosse a bonusová kola, která už máš odehraná, můžeš hrát znovu zdarma. Bonusová kola ani denní výzva život nestojí.</p>
+</div></details>
+
+<details><summary>Jak se počítají hvězdy a čas?</summary><div>
+<p>Čím rychleji level dokončíš, tím víc hvězd: do 1 minuty 3 hvězdy, do 2 minut 2, do 3 minut 1. Po třech minutách čas vyprší a level je potřeba zkusit znovu. Mince dostaneš jen za nově získané hvězdy, takže opakováním si můžeš výsledek vylepšit.</p>
+</div></details>
+
+<details><summary>Kolik stojí nápověda?</summary><div>
+<p>Klepnutí na žárovku stojí 30 mincí a odkryje další písmeno hledaného slova – kostička se přesune na své místo a zamkne se.</p>
+</div></details>
+
+<details><summary>Jak získám mince?</summary><div>
+<p>Za hvězdy v levelech, bonusových kolech a denní výzvě (5, 15 nebo 25 mincí), víc za bosse, jednou denně na kole štěstí, za reklamu s odměnou nebo nákupem v obchodě ve hře.</p>
+</div></details>
+
+<details><summary>Co jsou bonusová kola a boss?</summary><div>
+<p>Po každém 5. levelu se na mapě odemkne nepovinné bonusové kolo. Střídají se tři druhy:</p>
+<p><strong>Osobnost</strong> – podle oboru slož jméno a příjmení slavné osobnosti. <strong>Vetřelec</strong> – slož slovo ze 7 písmen; jedno písmeno je navíc a musí ven. <strong>Přísloví</strong> – každé slovo přísloví skládáš ve vlastním řádku.</p>
+<p>Každý 50. level je boss: nejdřív složíš obor osobnosti, pak její jméno a příjmení. Boss uzavírá kapitolu a otevírá další roční období na mapě.</p>
+</div></details>
+
+<details><summary>Kdy se odemkne denní výzva?</summary><div>
+<p>Po dokončení 20. levelu. Pak tě v menu každý den čeká jedno bonusové kolo, nové vždy o půlnoci.</p>
+</div></details>
+
+<details><summary>Zaplatil(a) jsem, ale mince nepřibyly.</summary><div>
+<p>Hra prodává jen mince, které se spotřebují, proto nemá tlačítko „Obnovit nákupy“ – není co obnovovat. Pokud se nákup přerušil (třeba výpadkem internetu), obchod ho pošle znovu a mince se připíšou při dalším spuštění hry s internetem. Když se to nestane, napiš nám a přilož potvrzení nákupu od Applu nebo Googlu. O vrácení peněz rozhoduje obchod: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, případně Google Play.</p>
+</div></details>
+
+<details><summary>Hraje se i bez internetu?</summary><div>
+<p>Ano. Levely, bonusy i denní výzva jsou přímo ve hře. Internet potřebuješ jen pro reklamy s odměnou a pro nákupy.</p>
+</div></details>
+
+<details><summary>Jak změním jazyk?</summary><div>
+<p>V Nastavení → „Jazyk“ (čeština, angličtina). Každý jazyk má vlastní slova, levely a postup; mince a životy jsou společné.</p>
+</div></details>
+
+<details><summary>Jak smažu postup? Přenese se na nový telefon?</summary><div>
+<p>V Nastavení → „Smazat postup“. Smažou se levely, hvězdy, mince i životy, nastavení zůstane. Smazání nejde vrátit. Hra nemá účty ani synchronizaci, postup je uložený jen v telefonu. Na nový telefon se může přenést jen spolu se zálohou celého telefonu.</p>
+</div></details>
+
+<details><summary>Kde změním souhlas s reklamami?</summary><div>
+<p>V Nastavení → „Nastavení soukromí“ (tlačítko se ukazuje tam, kde to pravidla vyžadují, např. v EU). Na iPhonu také v Nastavení → Soukromí a zabezpečení → Sledování. Podrobnosti jsou v <a href="../privacy/">zásadách ochrany soukromí</a>.</p>
+</div></details>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Support</h1>
+<p class="contact">Questions or problems with the game? Write to us at <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>. It helps if you include your phone model, the game version (shown in Settings) and what exactly happened.</p>
+
+<h2>FAQ</h2>
+
+<details><summary>How do I play?</summary><div>
+<p>Drag the letter tiles – the other tiles move out of the way. Every word uses all the letters in the row. Find every word those letters can make; then one or two letters drop out and you look for shorter words. A level ends with a 3- or 4-letter word. Only base forms count, with no proper names, abbreviations or swear words. The full rules are in the game under Settings → “Rules”.</p>
+</div></details>
+
+<details><summary>How do lives work?</summary><div>
+<p>Each attempt at a new level costs one life. A life comes back every 30 minutes and you can hold up to 5. When you run out, you can wait, refill 5 lives for 150 coins, or watch an ad that refills them too.</p>
+<p>Levels, bosses and bonus rounds you have already beaten can be replayed for free. Bonus rounds and the daily challenge never cost a life.</p>
+</div></details>
+
+<details><summary>How do stars and the timer work?</summary><div>
+<p>The faster you finish, the more stars you get: 3 stars within 1 minute, 2 within 2 minutes, 1 within 3 minutes. After three minutes time runs out and you need to try the level again. Coins are paid only for newly earned stars, so replaying lets you improve your result.</p>
+</div></details>
+
+<details><summary>How much does a hint cost?</summary><div>
+<p>Tapping the light bulb costs 30 coins and reveals the next letter of the word – the tile moves into place and locks.</p>
+</div></details>
+
+<details><summary>How do I get coins?</summary><div>
+<p>From stars in levels, bonus rounds and the daily challenge (5, 15 or 25 coins), more from bosses, once a day from the lucky wheel, by watching a rewarded ad, or from the in-game shop.</p>
+</div></details>
+
+<details><summary>What are bonus rounds and bosses?</summary><div>
+<p>After every 5th level an optional bonus round unlocks on the map. There are three kinds, taking turns:</p>
+<p><strong>Famous person</strong> – use the field as a clue and spell the first and last name of a famous person. <strong>Intruder</strong> – make a 7-letter word; one letter is extra and has to go. <strong>Proverb</strong> – each word of the proverb gets its own row.</p>
+<p>Every 50th level is a boss: first you spell the famous person’s field, then their first and last name. A boss closes a chapter and opens the next season on the map.</p>
+</div></details>
+
+<details><summary>When does the daily challenge unlock?</summary><div>
+<p>After you finish level 20. From then on, one bonus round waits in the menu every day, with a new one at midnight.</p>
+</div></details>
+
+<details><summary>I paid but didn’t get my coins.</summary><div>
+<p>The game only sells coins, which are used up, so there is no “Restore purchases” button – there is nothing to restore. If a purchase was interrupted (for example by a lost connection), the store sends it again and the coins are added the next time you start the game online. If that doesn’t happen, write to us and attach the purchase receipt from Apple or Google. Refunds are handled by the store: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> or Google Play.</p>
+</div></details>
+
+<details><summary>Can I play offline?</summary><div>
+<p>Yes. Levels, bonus rounds and the daily challenge are built into the game. You only need an internet connection for rewarded ads and purchases.</p>
+</div></details>
+
+<details><summary>How do I change the language?</summary><div>
+<p>In Settings → “Language” (Czech, English). Each language has its own words, levels and progress; coins and lives are shared.</p>
+</div></details>
+
+<details><summary>How do I delete my progress? Will it move to a new phone?</summary><div>
+<p>In Settings → “Delete progress”. This deletes levels, stars, coins and lives; settings are kept. It cannot be undone. The game has no accounts or sync, so progress is stored only on your phone. It can move to a new phone only as part of a full phone backup.</p>
+</div></details>
+
+<details><summary>Where can I change my ad consent?</summary><div>
+<p>In Settings → “Privacy settings” (the button appears where the rules require it, e.g. in the EU). On iPhone also in Settings → Privacy &amp; Security → Tracking. Details are in the <a href="../privacy/">privacy policy</a>.</p>
+</div></details>
+</section>
+
+</main>
+</body>
+</html>
